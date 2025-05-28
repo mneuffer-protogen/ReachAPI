@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reach360 Course Completion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Reach360 Course Completion</h1>
+
+    <div class="field">
+      <label for="lpSelect">Learning Path:</label>
+      <select id="lpSelect">
+        <option value="">-- Select a Learning Path --</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="userSelect">User:</label>
+      <select id="userSelect" disabled>
+        <option value="">-- Select a User --</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="courseSelect">Course:</label>
+      <select id="courseSelect" disabled>
+        <option value="">-- Select a Course --</option>
+      </select>
+    </div>
+
+    <!-- New: display selected course ID -->
+    <div id="selectedCourseId" style="margin-bottom: 0.5em; font-style: italic;"></div>
+
+    <button id="markCompleteBtn" disabled>Mark Course Complete</button>
+    <div id="message"></div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
