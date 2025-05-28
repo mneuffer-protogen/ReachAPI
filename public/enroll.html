@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reach360: Complete by Email</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Mark Course Complete by Email</h1>
+
+    <div class="field">
+      <label for="emailInput">User Email:</label>
+      <input type="email" id="emailInput" placeholder="user@example.com" />
+      <button id="loadBtn">Load Enrollments</button>
+    </div>
+
+    <div class="field">
+      <label for="lpSelect">Learning Path:</label>
+      <select id="lpSelect" disabled>
+        <option value="">-- Select a Learning Path --</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="courseSelect">Course:</label>
+      <select id="courseSelect" disabled>
+        <option value="">-- Select a Course --</option>
+      </select>
+    </div>
+
+    <button id="markBtn" disabled>Mark Course Complete</button>
+    <div id="message"></div>
+  </div>
+
+  <script src="enroll.js"></script>
+</body>
+</html>
